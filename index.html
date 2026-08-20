@@ -1,0 +1,229 @@
+<title>培芽教育</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;600;700&family=Noto+Sans+SC:wght@400;500;700&family=Marcellus&display=swap">
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: #FBF8F1;
+    color: #26322B;
+    font-family: 'Noto Sans SC', system-ui, sans-serif;
+    font-size: 15.5px;
+    line-height: 1.9;
+  }
+  a { color: #2E7D4F; }
+  a:hover { color: #1F6B3C; }
+  .topbar {
+    display: flex; align-items: center; justify-content: space-between;
+    max-width: 1020px; margin: 0 auto; padding: 18px 24px;
+  }
+  .brand { display: flex; align-items: center; gap: 10px; }
+  .brand span { font-family: 'Noto Serif SC', serif; font-weight: 700; font-size: 18px; color: #2E7D4F; letter-spacing: 3px; }
+  .cta {
+    display: inline-block; background: #2E7D4F; color: #FFFDF6; text-decoration: none;
+    padding: 10px 26px; border-radius: 999px; font-size: 14.5px; letter-spacing: 1px;
+  }
+  .cta:hover { background: #256B45; color: #FFFDF6; }
+  .hero { text-align: center; padding: 46px 24px 64px; }
+  .hero h1 {
+    font-family: 'Noto Serif SC', serif; font-size: clamp(30px, 6vw, 44px); font-weight: 700;
+    color: #2E7D4F; letter-spacing: 6px; margin: 26px 0 0; text-wrap: balance;
+  }
+  .hero .sub {
+    font-size: clamp(16px, 3vw, 19px); margin: 18px auto 8px; max-width: 560px; text-wrap: balance;
+  }
+  .hero .it {
+    font-family: Marcellus, serif; font-size: 12.5px; letter-spacing: 4px; color: #8A8371; margin-top: 14px;
+  }
+  .hero .cta { margin-top: 30px; font-size: 16px; padding: 13px 38px; }
+  .hero .hint { font-size: 12.5px; color: #8A8371; margin-top: 12px; }
+  section { padding: 54px 24px; }
+  section.alt { background: #F3EEDF; }
+  .inner { max-width: 1020px; margin: 0 auto; }
+  .eyebrow {
+    text-align: center; font-size: 12px; letter-spacing: 4px; color: #8A8371;
+    font-family: Marcellus, serif;
+  }
+  h2 {
+    text-align: center; font-family: 'Noto Serif SC', serif; font-size: clamp(22px, 4vw, 28px);
+    font-weight: 700; color: #2E7D4F; letter-spacing: 4px; margin: 8px 0 34px; text-wrap: balance;
+  }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; }
+  .card {
+    background: #FFFDF6; border: 1px solid #E9E2CE; border-radius: 14px; padding: 26px 24px;
+    display: flex; flex-direction: column; gap: 8px;
+  }
+  .card svg { width: 40px; height: 40px; }
+  .card h3 { margin: 4px 0 0; font-size: 18px; font-weight: 700; color: #2E7D4F; letter-spacing: 2px; }
+  .card p { margin: 0; font-size: 14px; color: #4A554D; }
+  .card .price { margin-top: auto; padding-top: 12px; font-size: 14px; color: #26322B; font-weight: 700; }
+  .card .price em { font-style: normal; font-size: 12px; color: #8A8371; font-weight: 400; }
+  .camp {
+    margin-top: 18px; background: #2E7D4F; color: #FFFDF6; border-radius: 14px;
+    padding: 26px 28px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 28px;
+  }
+  .camp h3 { margin: 0; font-family: 'Noto Serif SC', serif; font-size: 20px; letter-spacing: 3px; }
+  .camp p { margin: 0; font-size: 14px; opacity: 0.92; flex: 1 1 320px; }
+  .camp .price { font-weight: 700; white-space: nowrap; }
+  .feats { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 26px 22px; }
+  .feat h3 { margin: 0 0 4px; font-size: 16.5px; color: #2E7D4F; letter-spacing: 1px; }
+  .feat h3::before { content: ""; display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #2E7D4F; margin-right: 9px; vertical-align: 2px; }
+  .feat p { margin: 0; font-size: 14px; color: #4A554D; }
+  .sched { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; max-width: 820px; margin: 0 auto; }
+  .slot { background: #FFFDF6; border: 1px solid #E9E2CE; border-radius: 14px; padding: 20px 24px; text-align: center; }
+  .slot b { display: block; font-family: 'Noto Serif SC', serif; font-size: 19px; color: #2E7D4F; letter-spacing: 2px; margin-bottom: 4px; }
+  .slot span { font-size: 13.5px; color: #4A554D; }
+  .faq { max-width: 720px; margin: 0 auto; }
+  .faq h3 { font-size: 16px; color: #2E7D4F; margin: 22px 0 4px; }
+  .faq p { margin: 0; font-size: 14.5px; color: #4A554D; }
+  .contact { text-align: center; }
+  .contact .box {
+    display: inline-block; text-align: left; background: #FFFDF6; border: 1px solid #E9E2CE;
+    border-radius: 14px; padding: 26px 34px; margin-top: 8px; font-size: 15px;
+  }
+  .contact .box p { margin: 6px 0; }
+  .contact .ph { color: #B0522D; font-weight: 700; }
+  footer { text-align: center; padding: 40px 24px 50px; color: #8A8371; font-size: 12.5px; }
+  footer .en { font-family: Marcellus, serif; letter-spacing: 3px; margin-top: 8px; }
+</style>
+
+<div class="topbar">
+  <div class="brand">
+    <svg viewBox="0 0 200 200" width="34" height="34">
+      <path d="M124,9 A94,94 0 1 1 76,9" style="fill:none;stroke:#2E7D4F;stroke-width:8;stroke-linecap:round"></path>
+      <path d="M62,150 Q100,139 138,150" style="fill:none;stroke:#2E7D4F;stroke-width:6;stroke-linecap:round"></path>
+      <path d="M100,150 C99,134 99,118 100,106" style="fill:none;stroke:#2E7D4F;stroke-width:8;stroke-linecap:round"></path>
+      <path d="M100,106 C88,80 62,66 40,76 C42,98 70,112 100,106 Z" style="fill:#2E7D4F"></path>
+      <path d="M100,104 C112,78 138,64 162,72 C160,96 132,112 100,104 Z" style="fill:#2E7D4F"></path>
+    </svg>
+    <span>培芽教育</span>
+  </div>
+  <a class="cta" href="#contact">预约体验课</a>
+</div>
+
+<div class="hero">
+  <svg viewBox="0 0 200 200" width="120" height="120" aria-label="培芽教育标志">
+    <path d="M124,9 A94,94 0 1 1 76,9" style="fill:none;stroke:#2E7D4F;stroke-width:6;stroke-linecap:round"></path>
+    <path d="M62,150 Q100,139 138,150" style="fill:none;stroke:#2E7D4F;stroke-width:4;stroke-linecap:round"></path>
+    <path d="M100,150 C99,134 99,118 100,106" style="fill:none;stroke:#2E7D4F;stroke-width:6;stroke-linecap:round"></path>
+    <path d="M100,106 C88,80 62,66 40,76 C42,98 70,112 100,106 Z" style="fill:#2E7D4F"></path>
+    <path d="M100,104 C112,78 138,64 162,72 C160,96 132,112 100,104 Z" style="fill:#2E7D4F"></path>
+  </svg>
+  <h1>让孩子的每一份天赋<br>都破土而出</h1>
+  <p class="sub">面向雷焦艾米利亚华人家庭的中文·英语·艺术课外课堂——<strong style="color:#2E7D4F">中文不丢，英语领先，有一门艺术傍身</strong>。</p>
+  <div class="it">CENTRO CULTURALE PEIYA · REGGIO EMILIA</div>
+  <a class="cta" href="#contact">免费预约体验课</a>
+  <div class="hint">首次课程免费试听 · 小班教学 · 2027 年 9 月正式开学，现开放报名登记</div>
+</div>
+
+<section class="alt" id="courses">
+  <div class="inner">
+    <div class="eyebrow">I NOSTRI CORSI</div>
+    <h2>课程设置</h2>
+    <div class="cards">
+      <div class="card">
+        <svg viewBox="0 0 40 40"><path d="M6,8 L20,5 L34,8 L34,32 L20,35 L6,32 Z M20,5 L20,35" style="fill:none;stroke:#2E7D4F;stroke-width:2.4;stroke-linejoin:round"></path><path d="M10,14 L16,13 M10,19 L16,18 M24,13 L30,14 M24,18 L30,19" style="stroke:#2E7D4F;stroke-width:2;stroke-linecap:round"></path></svg>
+        <h3>中文（主打）</h3>
+        <p>专为海外出生的孩子设计：从拼音识字到读写自如。采用暨南大学《中文》海外华校标准教材，按水平分级，小班授课，对接 YCT / HSK 国际中文考试。中国历史与节庆文化融入课堂。</p>
+        <div class="price">€55/月 <em>· 每周 2 小时 · 8–12 人班</em></div>
+      </div>
+      <div class="card">
+        <svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="15" style="fill:none;stroke:#2E7D4F;stroke-width:2.4"></circle><path d="M5,20 L35,20 M20,5 C13,13 13,27 20,35 C27,27 27,13 20,5" style="fill:none;stroke:#2E7D4F;stroke-width:2"></path></svg>
+        <h3>少儿英语</h3>
+        <p>补上意大利小学英语课时少、口语弱的短板。课程对接 Trinity GESE 与剑桥少儿英语（YLE）考试路线，证书受意大利学校体系认可，高中阶段可计入学分。</p>
+        <div class="price">€60/月 <em>· 每周 1.5 小时 · 6–10 人班</em></div>
+      </div>
+      <div class="card">
+        <svg viewBox="0 0 40 40"><path d="M28,6 L34,12 L14,32 L6,34 L8,26 Z" style="fill:none;stroke:#2E7D4F;stroke-width:2.4;stroke-linejoin:round"></path><path d="M24,10 L30,16" style="stroke:#2E7D4F;stroke-width:2"></path></svg>
+        <h3>创意美术</h3>
+        <p>中西结合的儿童美术课：素描、色彩、水墨国画都画。培养观察力与审美，每学期一次小型作品展，孩子的画挂上墙。</p>
+        <div class="price">€55/月 <em>· 每周 1.5 小时 · 6–10 人班</em></div>
+      </div>
+      <div class="card">
+        <svg viewBox="0 0 40 40"><path d="M6,28 L6,12 L10,12 L10,28 M14,28 L14,12 L18,12 L18,28 M22,28 L22,12 L26,12 L26,28 M30,28 L30,12 L34,12 L34,28" style="fill:none;stroke:#2E7D4F;stroke-width:2.2"></path><path d="M4,28 L36,28" style="stroke:#2E7D4F;stroke-width:2.4;stroke-linecap:round"></path><path d="M9,12 L9,20 M17,12 L17,20 M25,12 L25,20" style="stroke:#2E7D4F;stroke-width:3.5"></path></svg>
+        <h3>钢琴</h3>
+        <p>一对一教学，零基础友好。从兴趣启蒙到考级演奏，每年一场学员音乐会，让孩子在舞台上收获自信。</p>
+        <div class="price">€85/月 <em>· 每周 30 分钟一对一</em></div>
+      </div>
+    </div>
+    <div class="camp">
+      <h3>暑期夏令营</h3>
+      <p>意大利暑假长达 14 周——我们提供周一至周五全天托管式夏令营：上午中文与英语，下午艺术、手工与户外，让假期不荒废、家长更安心。</p>
+      <div class="price">€160/周 · 按周报名</div>
+    </div>
+  </div>
+</section>
+
+<section id="features">
+  <div class="inner">
+    <div class="eyebrow">PERCHÉ PEIYA</div>
+    <h2>家长为什么选择培芽</h2>
+    <div class="feats">
+      <div class="feat">
+        <h3>考证路线清晰</h3>
+        <p>中文对接 YCT/HSK，英语对接 Trinity 与剑桥少儿——学习成果看得见，证书写进孩子的履历。</p>
+      </div>
+      <div class="feat">
+        <h3>真正的小班</h3>
+        <p>语言课不超过 12 人、艺术课不超过 10 人，每个孩子每节课都开口、都动手。</p>
+      </div>
+      <div class="feat">
+        <h3>安全与规范</h3>
+        <p>全体教师持无犯罪记录证明上岗，学员全员投保意外险，家长可随时沟通课堂情况。</p>
+      </div>
+      <div class="feat">
+        <h3>文化在生活里</h3>
+        <p>春节联欢、端午手作、书法体验、中国历史故事课——让孩子懂得自己从哪里来，走到哪里都有根。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="schedule">
+  <div class="inner">
+    <div class="eyebrow">ORARI</div>
+    <h2>上课时间</h2>
+    <div class="sched">
+      <div class="slot"><b>周六全天</b><span>中文分级班 · 美术 · 钢琴<br>华人家庭的传统上课日</span></div>
+      <div class="slot"><b>周一至周五 17:00–19:00</b><span>放学后时段 · 英语 · 钢琴 · 作业辅导<br>跟随意大利学校校历安排</span></div>
+      <div class="slot"><b>6 月–8 月</b><span>暑期夏令营 · 周一至周五全天<br>按周灵活报名</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="inner faq">
+    <div class="eyebrow">DOMANDE</div>
+    <h2>家长常见问题</h2>
+    <h3>孩子在意大利出生、中文零基础，能跟上吗？</h3>
+    <p>能。我们的学生大多数正是这样的孩子——入学先做免费水平测试，按水平分班，从拼音和识字起步，不与"国内进度"比较。</p>
+    <h3>如何报名体验课？</h3>
+    <p>添加下方微信或来电预约，第一次课免费试听，孩子喜欢、家长满意再报名。现阶段报名登记的家庭可享首学期优惠。</p>
+    <h3>你们在哪里上课？</h3>
+    <p>校区位于雷焦艾米利亚（Reggio Emilia），交通与停车便利，Modena、Carpi、Sassuolo 方向的家庭也方便到达。具体地址确定后第一时间通知登记家庭。</p>
+  </div>
+</section>
+
+<section class="alt contact" id="contact">
+  <div class="inner">
+    <div class="eyebrow">CONTATTI</div>
+    <h2>预约免费体验课</h2>
+    <div class="box">
+      <p>📱 微信：<span class="ph">[您的微信号]</span></p>
+      <p>☎️ 电话 / WhatsApp：<span class="ph">[您的电话]</span></p>
+      <p>📍 地址：Reggio Emilia <span class="ph">[具体地址确定后填写]</span></p>
+      <p style="color:#8A8371; font-size:13px; margin-top:12px">建议添加微信并备注"体验课 + 孩子年龄"，我们会尽快回复。</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <svg viewBox="0 0 200 200" width="40" height="40">
+    <path d="M124,9 A94,94 0 1 1 76,9" style="fill:none;stroke:#2E7D4F;stroke-width:8;stroke-linecap:round"></path>
+    <path d="M100,150 C99,134 99,118 100,106" style="fill:none;stroke:#2E7D4F;stroke-width:8;stroke-linecap:round"></path>
+    <path d="M100,106 C88,80 62,66 40,76 C42,98 70,112 100,106 Z" style="fill:#2E7D4F"></path>
+    <path d="M100,104 C112,78 138,64 162,72 C160,96 132,112 100,104 Z" style="fill:#2E7D4F"></path>
+  </svg>
+  <div>培芽教育 · 中文 · 英语 · 艺术</div>
+  <div class="en">CENTRO CULTURALE PEIYA · REGGIO EMILIA</div>
+  <div style="margin-top:10px">本中心为私立课外培训机构，非 scuola paritaria，课程不颁发法定学历。</div>
+</footer>
