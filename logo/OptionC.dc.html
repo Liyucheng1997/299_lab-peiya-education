@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&amp;family=Noto+Sans+SC:wght@400&amp;family=Marcellus&amp;display=swap">
+  <style>
+    body { margin: 0; font-family: 'Noto Sans SC', sans-serif; background: #FBF8F1; }
+    a { color: #2E7D4F; } a:hover { color: #1F6B3C; }
+  </style>
+</helmet>
+<div style="--green: {{green}}; --yellow: {{yellow}}; width: 560px; height: 520px; box-sizing: border-box; background: #FBF8F1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 24px; position: relative">
+  <span style="position: absolute; top: 20px; left: 24px; font-size: 12px; color: #B0A88F; letter-spacing: 2px">方案 C · 书本</span>
+  <svg viewBox="0 0 220 140" width="250" height="159">
+    <path d="M110,74 C110,54 110,44 110,30" style="fill: none; stroke: var(--green); stroke-width: 6; stroke-linecap: round"></path>
+    <path d="M110,40 C102,22 88,13 70,12 C72,30 86,41 110,40 Z" style="fill: var(--green)"></path>
+    <path d="M110,46 C118,30 130,22 146,21 C144,38 130,48 110,46 Z" style="fill: var(--yellow)"></path>
+    <path d="M110,128 C86,108 58,102 28,106 L28,54 C58,50 86,56 110,74 Z" style="fill: #FFFDF6; stroke: var(--green); stroke-width: 5; stroke-linejoin: round"></path>
+    <path d="M110,128 C134,108 162,102 192,106 L192,54 C162,50 134,56 110,74 Z" style="fill: var(--yellow); fill-opacity: 0.45; stroke: var(--green); stroke-width: 5; stroke-linejoin: round"></path>
+    <path d="M110,74 L110,128" style="fill: none; stroke: var(--green); stroke-width: 5; stroke-linecap: round"></path>
+  </svg>
+  <div style="display: flex; flex-direction: column; align-items: center; gap: 7px">
+    <div style="font-family: 'ZCOOL KuaiLe', sans-serif; font-size: 38px; color: var(--green); letter-spacing: 8px; text-indent: 8px">培芽教育</div>
+    <div style="font-family: Marcellus, serif; font-size: 13px; color: #8A8371; letter-spacing: 5px; text-indent: 5px">PEIYA EDUCATION</div>
+  </div>
+</div>
+</x-dc>
+<script data-dc-script data-props='{"green":{"editor":"color","default":"#2E7D4F","options":["#2E7D4F","#3E8E5A","#55A860","#1F6B3C"],"section":"配色"},"yellow":{"editor":"color","default":"#F5C542","options":["#F5C542","#F2B705","#FFD666","#E8A93D"],"section":"配色"},"$preview":{"width":560,"height":520}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      green: this.props.green ?? '#2E7D4F',
+      yellow: this.props.yellow ?? '#F5C542'
+    };
+  }
+}
+</script>
+</body>
+</html>

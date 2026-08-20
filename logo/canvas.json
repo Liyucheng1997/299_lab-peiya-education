@@ -1,0 +1,11 @@
+{
+  "artboards": [
+    { "file": "Main.dc.html", "title": "主标 · 定稿（暂定）", "x": 0, "y": 0, "w": 560, "h": 520 },
+    { "file": "Shapes.dc.html", "title": "形状变体", "x": 620, "y": 0, "w": 880, "h": 560 },
+    { "file": "Colors.dc.html", "title": "底色变体", "x": 620, "y": 620, "w": 880, "h": 560 }
+  ],
+  "annotations": [
+    { "id": "how-to-pick", "x": 0, "y": 580, "w": 300, "text": "主标已按定稿的单绿嫩芽做了两组延伸：\n右上是形状变体（圆环 / 方框 / 实底 / 裸芽 / 横版），右下是底色变体（浅底用绿标，深底用反白）。\n\n画板上方的 green 色块仍可统一调整品牌绿。" }
+  ],
+  "launch": { "view": "canvas" }
+}

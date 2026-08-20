@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600&amp;family=Noto+Sans+SC:wght@400&amp;family=Marcellus&amp;display=swap">
+  <style>
+    body { margin: 0; font-family: 'Noto Sans SC', sans-serif; background: #FBF8F1; }
+    a { color: #2E7D4F; } a:hover { color: #1F6B3C; }
+  </style>
+</helmet>
+<div style="--green: {{green}}; width: 560px; height: 520px; box-sizing: border-box; background: #FBF8F1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 24px; position: relative">
+  <span style="position: absolute; top: 20px; left: 24px; font-size: 12px; color: #B0A88F; letter-spacing: 2px">主标 · 定稿（暂定）</span>
+  <svg viewBox="0 0 200 200" width="205" height="205">
+    <path d="M124,9 A94,94 0 1 1 76,9" style="fill: none; stroke: var(--green); stroke-width: 6; stroke-linecap: round"></path>
+    <path d="M62,150 Q100,139 138,150" style="fill: none; stroke: var(--green); stroke-width: 4; stroke-linecap: round"></path>
+    <path d="M100,150 C99,134 99,118 100,106" style="fill: none; stroke: var(--green); stroke-width: 6; stroke-linecap: round"></path>
+    <path d="M100,106 C88,80 62,66 40,76 C42,98 70,112 100,106 Z" style="fill: var(--green)"></path>
+    <path d="M100,104 C112,78 138,64 162,72 C160,96 132,112 100,104 Z" style="fill: var(--green)"></path>
+  </svg>
+  <div style="display: flex; flex-direction: column; align-items: center; gap: 7px">
+    <div style="font-family: 'Noto Serif SC', serif; font-size: 34px; font-weight: 600; color: var(--green); letter-spacing: 12px; text-indent: 12px">培芽教育</div>
+    <div style="font-family: Marcellus, 'Noto Serif SC', serif; font-size: 13px; color: #8A8371; letter-spacing: 5px; text-indent: 5px">PEIYA EDUCATION</div>
+  </div>
+</div>
+</x-dc>
+<script data-dc-script data-props='{"green":{"editor":"color","default":"#2E7D4F","options":["#2E7D4F","#3E8E5A","#55A860","#1F6B3C"],"section":"配色"},"$preview":{"width":560,"height":520}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      green: this.props.green ?? '#2E7D4F'
+    };
+  }
+}
+</script>
+</body>
+</html>

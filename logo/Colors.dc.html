@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600&amp;family=Noto+Sans+SC:wght@400&amp;family=Marcellus&amp;display=swap">
+  <style>
+    body { margin: 0; font-family: 'Noto Sans SC', sans-serif; background: #FBF8F1; }
+    a { color: #2E7D4F; } a:hover { color: #1F6B3C; }
+  </style>
+</helmet>
+<div style="--green: {{green}}; width: 880px; height: 560px; box-sizing: border-box; background: #FBF8F1; display: flex; flex-direction: column; padding: 26px 36px 30px 36px; gap: 16px">
+  <span style="font-size: 12px; color: #B0A88F; letter-spacing: 2px">底色变体</span>
+  <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; flex-grow: 1">
+    <div style="background: #FBF8F1; border: 1px solid #EEE6D4; border-radius: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px">
+      <svg viewBox="0 0 200 200" width="112" height="112">
+        <path d="M124,9 A94,94 0 1 1 76,9" style="fill: none; stroke: var(--green); stroke-width: 6; stroke-linecap: round"></path>
+        <path d="M62,150 Q100,139 138,150" style="fill: none; stroke: var(--green); stroke-width: 4; stroke-linecap: round"></path>
+        <path d="M100,150 C99,134 99,118 100,106" style="fill: none; stroke: var(--green); stroke-width: 6; stroke-linecap: round"></path>
+        <path d="M100,106 C88,80 62,66 40,76 C42,98 70,112 100,106 Z" style="fill: var(--green)"></path>
+        <path d="M100,104 C112,78 138,64 162,72 C160,96 132,112 100,104 Z" style="fill: var(--green)"></path>
+      </svg>
+      <span style="font-size: 11px; color: #B0A88F; letter-spacing: 2px">米白 #FBF8F1</span>
+    </div>
+    <div style="background: #FFFFFF; border: 1px solid #EEE6D4; border-radius: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px">
+      <svg viewBox="0 0 200 200" width="112" height="112">
+        <path d="M124,9 A94,94 0 1 1 76,9" style="fill: none; stroke: var(--green); stroke-width: 6; stroke-linecap: round"></path>
+        <path d="M62,150 Q100,139 138,150" style="fill: none; stroke: var(--green); stroke-width: 4; stroke-linecap: round"></path>
+        <path d="M100,150 C99,134 99,118 100,106" style="fill: none; stroke: var(--green); stroke-width: 6; stroke-linecap: round"></path>
+        <path d="M100,106 C88,80 62,66 40,76 C42,98 70,112 100,106 Z" style="fill: var(--green)"></path>
+        <path d="M100,104 C112,78 138,64 162,72 C160,96 132,112 100,104 Z" style="fill: var(--green)"></path>
+      </svg>
+      <span style="font-size: 11px; color: #B0A88F; letter-spacing: 2px">纯白 #FFFFFF</span>
+    </div>
+    <div style="background: #E9F4E5; border-radius: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px">
+      <svg viewBox="0 0 200 200" width="112" height="112">
+        <path d="M124,9 A94,94 0 1 1 76,9" style="fill: none; stroke: var(--green); stroke-width: 6; stroke-linecap: round"></path>
+        <path d="M62,150 Q100,139 138,150" style="fill: none; stroke: var(--green); stroke-width: 4; stroke-linecap: round"></path>
+        <path d="M100,150 C99,134 99,118 100,106" style="fill: none; stroke: var(--green); stroke-width: 6; stroke-linecap: round"></path>
+        <path d="M100,106 C88,80 62,66 40,76 C42,98 70,112 100,106 Z" style="fill: var(--green)"></path>
+        <path d="M100,104 C112,78 138,64 162,72 C160,96 132,112 100,104 Z" style="fill: var(--green)"></path>
+      </svg>
+      <span style="font-size: 11px; color: #6B7D6A; letter-spacing: 2px">浅绿 #E9F4E5</span>
+    </div>
+    <div style="background: var(--green); border-radius: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px">
+      <svg viewBox="0 0 200 200" width="112" height="112">
+        <path d="M124,9 A94,94 0 1 1 76,9" style="fill: none; stroke: #FFFDF6; stroke-width: 6; stroke-linecap: round"></path>
+        <path d="M62,150 Q100,139 138,150" style="fill: none; stroke: #FFFDF6; stroke-width: 4; stroke-linecap: round"></path>
+        <path d="M100,150 C99,134 99,118 100,106" style="fill: none; stroke: #FFFDF6; stroke-width: 6; stroke-linecap: round"></path>
+        <path d="M100,106 C88,80 62,66 40,76 C42,98 70,112 100,106 Z" style="fill: #FFFDF6"></path>
+        <path d="M100,104 C112,78 138,64 162,72 C160,96 132,112 100,104 Z" style="fill: #FFFDF6"></path>
+      </svg>
+      <span style="font-size: 11px; color: #FFFDF6; opacity: 0.85; letter-spacing: 2px">品牌绿 · 反白</span>
+    </div>
+    <div style="background: #1F4D33; border-radius: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px">
+      <svg viewBox="0 0 200 200" width="112" height="112">
+        <path d="M124,9 A94,94 0 1 1 76,9" style="fill: none; stroke: #FFFDF6; stroke-width: 6; stroke-linecap: round"></path>
+        <path d="M62,150 Q100,139 138,150" style="fill: none; stroke: #FFFDF6; stroke-width: 4; stroke-linecap: round"></path>
+        <path d="M100,150 C99,134 99,118 100,106" style="fill: none; stroke: #FFFDF6; stroke-width: 6; stroke-linecap: round"></path>
+        <path d="M100,106 C88,80 62,66 40,76 C42,98 70,112 100,106 Z" style="fill: #FFFDF6"></path>
+        <path d="M100,104 C112,78 138,64 162,72 C160,96 132,112 100,104 Z" style="fill: #FFFDF6"></path>
+      </svg>
+      <span style="font-size: 11px; color: #FFFDF6; opacity: 0.85; letter-spacing: 2px">墨绿 #1F4D33</span>
+    </div>
+    <div style="background: #2B3A2E; border-radius: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px">
+      <svg viewBox="0 0 200 200" width="112" height="112">
+        <path d="M124,9 A94,94 0 1 1 76,9" style="fill: none; stroke: #FFFDF6; stroke-width: 6; stroke-linecap: round"></path>
+        <path d="M62,150 Q100,139 138,150" style="fill: none; stroke: #FFFDF6; stroke-width: 4; stroke-linecap: round"></path>
+        <path d="M100,150 C99,134 99,118 100,106" style="fill: none; stroke: #FFFDF6; stroke-width: 6; stroke-linecap: round"></path>
+        <path d="M100,106 C88,80 62,66 40,76 C42,98 70,112 100,106 Z" style="fill: #FFFDF6"></path>
+        <path d="M100,104 C112,78 138,64 162,72 C160,96 132,112 100,104 Z" style="fill: #FFFDF6"></path>
+      </svg>
+      <span style="font-size: 11px; color: #FFFDF6; opacity: 0.85; letter-spacing: 2px">深灰绿 #2B3A2E</span>
+    </div>
+  </div>
+</div>
+</x-dc>
+<script data-dc-script data-props='{"green":{"editor":"color","default":"#2E7D4F","options":["#2E7D4F","#3E8E5A","#55A860","#1F6B3C"],"section":"配色"},"$preview":{"width":880,"height":560}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      green: this.props.green ?? '#2E7D4F'
+    };
+  }
+}
+</script>
+</body>
+</html>

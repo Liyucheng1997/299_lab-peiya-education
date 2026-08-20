@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;900&amp;family=Marcellus&amp;display=swap">
+  <style>
+    body { margin: 0; font-family: 'Noto Sans SC', sans-serif; background: #FBF8F1; }
+    a { color: #2E7D4F; } a:hover { color: #1F6B3C; }
+  </style>
+</helmet>
+<div style="--green: {{green}}; --yellow: {{yellow}}; width: 560px; height: 520px; box-sizing: border-box; background: #FBF8F1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 26px; position: relative">
+  <span style="position: absolute; top: 20px; left: 24px; font-size: 12px; color: #B0A88F; letter-spacing: 2px">方案 D · 图标</span>
+  <svg viewBox="0 0 200 200" width="170" height="170">
+    <rect x="10" y="10" width="180" height="180" rx="44" style="fill: var(--green)"></rect>
+    <path d="M100,158 C100,132 100,120 100,100" style="fill: none; stroke: #FFFDF6; stroke-width: 9; stroke-linecap: round"></path>
+    <path d="M100,108 C93,82 74,68 50,66 C52,94 72,110 100,108 Z" style="fill: #FFFDF6"></path>
+    <path d="M100,118 C107,96 122,84 144,82 C142,108 124,122 100,118 Z" style="fill: var(--yellow)"></path>
+    <circle cx="100" cy="162" r="7" style="fill: var(--yellow)"></circle>
+  </svg>
+  <div style="display: flex; flex-direction: column; align-items: center; gap: 7px">
+    <div style="font-size: 32px; font-weight: 900; color: #2B3A2E; letter-spacing: 10px; text-indent: 10px">培芽教育</div>
+    <div style="font-family: Marcellus, serif; font-size: 13px; color: #8A8371; letter-spacing: 5px; text-indent: 5px">PEIYA EDUCATION</div>
+  </div>
+</div>
+</x-dc>
+<script data-dc-script data-props='{"green":{"editor":"color","default":"#2E7D4F","options":["#2E7D4F","#3E8E5A","#55A860","#1F6B3C"],"section":"配色"},"yellow":{"editor":"color","default":"#F5C542","options":["#F5C542","#F2B705","#FFD666","#E8A93D"],"section":"配色"},"$preview":{"width":560,"height":520}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      green: this.props.green ?? '#2E7D4F',
+      yellow: this.props.yellow ?? '#F5C542'
+    };
+  }
+}
+</script>
+</body>
+</html>
