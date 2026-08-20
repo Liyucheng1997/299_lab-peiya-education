@@ -6,6 +6,12 @@
       "runtimeExecutable": "python",
       "runtimeArgs": ["-m", "http.server", "8642", "--directory", "logo"],
       "port": 8642
+    },
+    {
+      "name": "site-preview",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "8643", "--directory", "网站"],
+      "port": 8643
     }
   ]
 }

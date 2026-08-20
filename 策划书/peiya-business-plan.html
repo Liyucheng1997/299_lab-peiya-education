@@ -1,0 +1,228 @@
+<title>培芽教育项目策划书</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;600;700&family=Noto+Sans+SC:wght@400;500;700&family=Marcellus&display=swap">
+<style>
+  :root {
+    --paper: #FBF8F1;
+    --card: #FFFDF6;
+    --ink: #26322B;
+    --green: #2E7D4F;
+    --sprout: #7FBF6A;
+    --muted: #8A8371;
+    --line: #E6DFCC;
+    --soft: #F2EDDF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #141A16;
+      --card: #1B231D;
+      --ink: #E5E2D8;
+      --green: #6FBF85;
+      --sprout: #8FCF9A;
+      --muted: #9B968A;
+      --line: #2B352D;
+      --soft: #202A22;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #141A16;
+    --card: #1B231D;
+    --ink: #E5E2D8;
+    --green: #6FBF85;
+    --sprout: #8FCF9A;
+    --muted: #9B968A;
+    --line: #2B352D;
+    --soft: #202A22;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Noto Sans SC', system-ui, sans-serif;
+    font-size: 15px;
+    line-height: 1.9;
+  }
+  .wrap { max-width: 800px; margin: 0 auto; padding: 56px 28px 80px; }
+  .cover { text-align: center; padding: 24px 0 40px; border-bottom: 2px solid var(--green); margin-bottom: 48px; }
+  .cover .en { font-family: Marcellus, 'Noto Serif SC', serif; font-size: 12px; letter-spacing: 5px; color: var(--muted); margin-top: 14px; }
+  h1 { font-family: 'Noto Serif SC', serif; font-size: 32px; font-weight: 700; letter-spacing: 6px; color: var(--green); margin: 22px 0 0; text-wrap: balance; }
+  .meta { color: var(--muted); font-size: 13px; margin-top: 16px; letter-spacing: 1px; }
+  h2 { font-family: 'Noto Serif SC', serif; font-size: 21px; font-weight: 700; color: var(--green); margin: 52px 0 6px; letter-spacing: 2px; }
+  h2 + .rule { height: 2px; background: linear-gradient(to right, var(--green) 56px, var(--line) 56px); margin-bottom: 20px; }
+  h3 { font-size: 16px; font-weight: 700; margin: 28px 0 8px; letter-spacing: 1px; }
+  p { margin: 10px 0; }
+  ul { margin: 8px 0; padding-left: 22px; }
+  li { margin: 5px 0; }
+  strong { color: var(--green); font-weight: 700; }
+  .kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 14px; margin: 26px 0 8px; }
+  .kpi { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; }
+  .kpi b { display: block; font-family: 'Noto Serif SC', serif; font-size: 22px; color: var(--green); font-variant-numeric: tabular-nums; }
+  .kpi span { font-size: 12px; color: var(--muted); letter-spacing: 1px; }
+  .tablebox { overflow-x: auto; margin: 14px 0; }
+  table { border-collapse: collapse; width: 100%; min-width: 560px; font-size: 13.5px; background: var(--card); }
+  th, td { border: 1px solid var(--line); padding: 8px 12px; text-align: left; vertical-align: top; }
+  th { background: var(--soft); font-weight: 700; white-space: nowrap; }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .tag { display: inline-block; font-size: 11px; padding: 1px 8px; border-radius: 999px; border: 1px solid var(--green); color: var(--green); margin-left: 6px; vertical-align: 1px; white-space: nowrap; }
+  .note { background: var(--soft); border-left: 3px solid var(--green); padding: 12px 16px; border-radius: 0 8px 8px 0; font-size: 13.5px; margin: 16px 0; }
+  .src { color: var(--muted); font-size: 12.5px; }
+  .timeline { border-left: 2px solid var(--line); margin: 18px 0 10px 6px; padding-left: 22px; }
+  .step { position: relative; margin-bottom: 20px; }
+  .step::before { content: ""; position: absolute; left: -28px; top: 7px; width: 10px; height: 10px; border-radius: 50%; background: var(--green); }
+  .step b { font-family: 'Noto Serif SC', serif; color: var(--green); }
+  .foot { margin-top: 60px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: 12.5px; }
+</style>
+
+<div class="wrap">
+
+<div class="cover">
+  <svg viewBox="0 0 200 200" width="92" height="92" aria-label="培芽教育标志">
+    <path d="M124,9 A94,94 0 1 1 76,9" style="fill:none;stroke:var(--green);stroke-width:6;stroke-linecap:round"></path>
+    <path d="M62,150 Q100,139 138,150" style="fill:none;stroke:var(--green);stroke-width:4;stroke-linecap:round"></path>
+    <path d="M100,150 C99,134 99,118 100,106" style="fill:none;stroke:var(--green);stroke-width:6;stroke-linecap:round"></path>
+    <path d="M100,106 C88,80 62,66 40,76 C42,98 70,112 100,106 Z" style="fill:var(--green)"></path>
+    <path d="M100,104 C112,78 138,64 162,72 C160,96 132,112 100,104 Z" style="fill:var(--green)"></path>
+  </svg>
+  <h1>培芽教育项目策划书</h1>
+  <div class="en">PEIYA EDUCATION · REGGIO EMILIA</div>
+  <div class="meta">中文 · 英语 · 艺术课程　|　面向华侨华人子女　|　小规模启动方案　|　v1.0 草案 · 2026 年 8 月</div>
+</div>
+
+<h2>摘要</h2><div class="rule"></div>
+<p>培芽教育拟在意大利雷焦艾米利亚（Reggio Emilia）创办一所面向华侨华人子女的课外培训中心，以<strong>中文传承 + 英语提升</strong>为双主线，辅以绘画、钢琴、中国历史文化等艺术课程。Reggio Emilia 省有近 5,000 名中国籍居民（大区第三），40 公里辐射圈内华人约 7,000–8,000 人，目标学龄儿童约 1,200–1,600 名，其中近七成在意大利出生——正是"会说不会写"的典型传承语需求。本地仅一家同类机构，Modena/Carpi 方向为空白市场。</p>
+<div class="kpis">
+  <div class="kpi"><b>1,200–1,600</b><span>辐射圈目标儿童（估）</span></div>
+  <div class="kpi"><b>≈ €28,000</b><span>启动资金（含 3 个月预备金）</span></div>
+  <div class="kpi"><b>≈ 60 名</b><span>盈亏平衡学员数</span></div>
+  <div class="kpi"><b>2027 年 9 月</b><span>正式开学目标</span></div>
+</div>
+
+<h2>一、项目定位</h2><div class="rule"></div>
+<p>一句话定位：<strong>让海外华人孩子"中文不丢、英语领先、有一门艺术傍身"</strong>。</p>
+<ul>
+  <li><strong>中文</strong>：解决二代移民"听说尚可、读写薄弱"的痛点，采用暨南大学《中文》教材（海外华校标准教材，可免费获取），对接 YCT/HSK 考试（考点：博洛尼亚大学孔子学院，约 70 公里）。</li>
+  <li><strong>英语</strong>：意大利公立小学英语课时少、口语弱，华人家长普遍重视；课程对接 Trinity GESE（低龄，考费 €49 起）与剑桥少儿 YLE（€67–96），证书在意大利学校体系认知度高，高中阶段可计入学分。</li>
+  <li><strong>艺术</strong>：绘画、钢琴、中国历史文化，提高客单价与粘性，与本地纯语言机构形成差异。</li>
+  <li><strong>名称合规</strong>：意大利法律限制非认证机构使用 "scuola" 一词，注册名建议用 <strong>Centro Culturale Peiya</strong>（培芽文化中心）或 Accademia Peiya。</li>
+</ul>
+
+<h2>二、市场分析</h2><div class="rule"></div>
+<h3>2.1 市场规模（ISTAT 2024–2025 官方数据）</h3>
+<div class="tablebox"><table>
+  <tr><th>区域</th><th class="num">中国籍居民</th><th>说明</th></tr>
+  <tr><td>Reggio Emilia 市</td><td class="num">2,627</td><td>全市第二大外国国籍（仅次于阿尔巴尼亚）；全市 16.7% 为外国居民</td></tr>
+  <tr><td>Reggio Emilia 省</td><td class="num">4,962</td><td>大区第三，仅次于 Bologna（6,663）与 Modena（5,979）</td></tr>
+  <tr><td>40 公里辐射圈</td><td class="num">≈ 7,000–8,000</td><td>含 Carpi（1,205）、Modena 市（1,103）、Sassuolo、Bassa Reggiana 聚居带</td></tr>
+</table></div>
+<p>按全国比例（未成年人占旅意华人约 26%）推算，辐射圈内 4–14 岁华裔儿童约 <strong>1,200–1,600 名</strong>；已入籍家庭未计入，实际更多。全省外国籍学生占比 19.2%，其中 69% 在意大利出生。</p>
+<h3>2.2 竞争格局</h3>
+<ul>
+  <li><strong>KM School</strong>（Reggio 市内，2017 年创办）：中文 + 国画 + 功夫 + 课业辅导，唯一直接竞品——同时证明"语言+艺术"模式在本地成立。</li>
+  <li>Cina Tricolore、ARCI 等主要面向意大利成人，不构成直接竞争。</li>
+  <li><strong>Modena / Carpi 无专门少儿中文学校</strong>（当地中国籍居民 1,700+）——培芽的差异化增量市场。</li>
+  <li>差异化打法：<strong>英语线 + 考证锚点</strong>（YCT/YLE/Trinity 全覆盖）是本地竞品没有的组合。</li>
+</ul>
+
+<h2>三、课程体系与排课</h2><div class="rule"></div>
+<h3>3.1 课程与定价 <span class="tag">价格可调</span></h3>
+<div class="tablebox"><table>
+  <tr><th>课程</th><th>班型</th><th>课时</th><th class="num">学费</th><th>说明</th></tr>
+  <tr><td>中文（主打）</td><td>8–12 人，按水平分级</td><td>周六 2h/周</td><td class="num">€55/月</td><td>暨大《中文》教材，YCT 考级路线</td></tr>
+  <tr><td>少儿英语</td><td>6–10 人</td><td>1.5h/周</td><td class="num">€60/月</td><td>Trinity / 剑桥 YLE 路线；市场价 €700–1,200/年，定价有竞争力</td></tr>
+  <tr><td>创意美术</td><td>6–10 人</td><td>1.5h/周</td><td class="num">€55/月</td><td>中西结合（含国画元素）</td></tr>
+  <tr><td>钢琴</td><td>一对一</td><td>30min/周</td><td class="num">€85/月</td><td>市场一对一 €25–30/h，定价居中</td></tr>
+  <tr><td>中国历史文化</td><td>随中文班</td><td>模块嵌入</td><td class="num">含在中文班内</td><td>节庆活动 + 故事课，做口碑与传播素材</td></tr>
+  <tr><td>暑期夏令营</td><td>15–20 人/期</td><td>周一至五全天</td><td class="num">€160/周</td><td>北意市场价 €150–200/周；意大利暑假长达 14 周，刚需</td></tr>
+</table></div>
+<h3>3.2 排课依据（大区校历与作息）</h3>
+<ul>
+  <li>本大区约 <strong>65% 小学生读全日制</strong>（16:30 放学）→ 工作日主力时段 <strong>17:00–19:00</strong>；初中生 13:30–14:00 放学 → <strong>14:30–16:30</strong> 可排。</li>
+  <li><strong>周六全天</strong>是华校传统主力时段，排中文分级班 + 艺术课。</li>
+  <li>学年跟随大区校历（9 月中–6 月初；圣诞 12/24–1/6、复活节停课），<strong>6–8 月办夏令营</strong>填补 14 周暑假空档。</li>
+</ul>
+
+<h2>四、法律形式与合规</h2><div class="rule"></div>
+<h3>4.1 推荐路径 <span class="tag">需 commercialista 确认</span></h3>
+<p>小规模商业化启动推荐：<strong>个体户 partita IVA + forfettario 优惠税制</strong>——ATECO 85.59.30（语言课程）为主码、85.52（艺术教育）副码；开办成本近乎为零，新开业<strong>前 5 年税率仅 5%</strong>（按 78% 利润系数计），营收上限 €85,000/年。规模扩大或引入合伙人后转 SRL。</p>
+<p class="src">替代路径：APS 社会促进协会（会员费免税免增值税、成本最低），但法律要求以志愿者为主运营、受薪人员受严格比例限制，不适合创办人以此谋生的模式；旧式"文化协会"避税捷径 2026 年起已被税改封死。</p>
+<h3>4.2 合规清单</h3>
+<div class="tablebox"><table>
+  <tr><th>事项</th><th>要求</th></tr>
+  <tr><td>开业申报</td><td>向市政 SUAP 递交 SCIA（大区网上平台）；签租约前先向 SUAP 确认</td></tr>
+  <tr><td>场地用途</td><td>教学归 direzionale 类；普通办公/商业单元且有 agibilità 一般可用，签约前请本地 tecnico 核查</td></tr>
+  <tr><td>消防</td><td>同时在场超 100 人才触发消防审批，小机构不涉及；但需灭火器、标识、风险评估</td></tr>
+  <tr><td>未成年人保护</td><td><strong>每位教师上岗前必须取得无犯罪记录证明</strong>（反恋童法，违者罚 €10,000–15,000）</td></tr>
+  <tr><td>保险</td><td>场所第三者责任险 + 学员意外险（每孩每年几欧元）</td></tr>
+  <tr><td>隐私</td><td>14 岁以下由监护人签署数据同意；照片上网需父母双方签肖像授权</td></tr>
+  <tr><td>餐饮</td><td>不供餐（家长自备包装零食），规避 HACCP 备案</td></tr>
+  <tr><td>教师用工</td><td>常规教师用 P.IVA 自由职业开票（成本 = 约定课酬×1.0）；勿滥用"偶发劳务"；首次用工前咨询 consulente del lavoro</td></tr>
+</table></div>
+
+<h2>五、场地方案</h2><div class="rule"></div>
+<ul>
+  <li>目标：<strong>120–150 m²</strong>，2 间教室 + 1 间琴房/小教室 + 接待区；半市中心、近华人商圈或学校、方便停车。</li>
+  <li>市场行情：写字楼均价 €9.5/m²/月；实例——San Prospero/Tribunale 区 150 m² 挂牌 €1,050/月。<strong>预算 €1,000–1,500/月</strong>。</li>
+  <li>一次性：押金 3 个月（≈€3,600）+ 中介费（年租 10–15%+IVA）+ 注册税（年租 1% 房东房客各半）。</li>
+  <li>装修：表面翻新（刷墙、灯光、地面小修）预算 €5,000–6,000，先满足合规与明亮整洁，不做重装。</li>
+</ul>
+
+<h2>六、财务测算</h2><div class="rule"></div>
+<h3>6.1 启动投入 <span class="tag">可调</span></h3>
+<div class="tablebox"><table>
+  <tr><th>项目</th><th class="num">金额</th><th>项目</th><th class="num">金额</th></tr>
+  <tr><td>注册与专业咨询</td><td class="num">€1,000</td><td>数码钢琴 ×2</td><td class="num">€1,000</td></tr>
+  <tr><td>场地押金（3 个月）</td><td class="num">€3,600</td><td>65″ 教学触摸屏</td><td class="num">€1,300</td></tr>
+  <tr><td>中介费</td><td class="num">€1,750</td><td>教材教具</td><td class="num">€800</td></tr>
+  <tr><td>轻装修与合规改造</td><td class="num">€6,000</td><td>网站与开业宣传</td><td class="num">€1,200</td></tr>
+  <tr><td>教室家具 ×2</td><td class="num">€3,000</td><td>首年保险</td><td class="num">€600</td></tr>
+  <tr><td>杂项预备（约 10%）</td><td class="num">€1,750</td><td><strong>小计</strong></td><td class="num"><strong>€22,000</strong></td></tr>
+  <tr><td>运营预备金（3 个月固定成本）</td><td class="num">€6,000</td><td><strong>启动资金合计</strong></td><td class="num"><strong>≈ €28,000</strong></td></tr>
+</table></div>
+<p class="src">二手立式钢琴（€2,500 左右）可在钢琴学员成规模后再购置；初期用数码钢琴过渡。</p>
+<h3>6.2 月度成本与单班模型</h3>
+<p>固定成本约 <strong>€2,000/月</strong>：租金 €1,200 + 水电气网垃圾税 €450 + 保险/会计/行政 €250 + 营销 €100。教师按 <strong>€20/课时</strong>（P.IVA 兼课）计。单班模型：一个 12 人中文班月收 €660，教师成本 €160，<strong>班级毛利约 €500/月</strong>。</p>
+<h3>6.3 三种情景（学年内月度）</h3>
+<div class="tablebox"><table>
+  <tr><th>情景</th><th class="num">学员数</th><th class="num">月学费收入</th><th class="num">教师成本</th><th class="num">固定成本</th><th class="num">月净利</th></tr>
+  <tr><td>起步（开学首学期）</td><td class="num">35</td><td class="num">€2,050</td><td class="num">€750</td><td class="num">€2,000</td><td class="num">−€700</td></tr>
+  <tr><td>平衡（首学年末）</td><td class="num">60</td><td class="num">€3,500</td><td class="num">€1,250</td><td class="num">€2,000</td><td class="num">≈ €250</td></tr>
+  <tr><td>成熟（第二学年）</td><td class="num">90</td><td class="num">€5,300</td><td class="num">€1,800</td><td class="num">€2,000</td><td class="num">+€1,500</td></tr>
+</table></div>
+<p><strong>盈亏平衡点约 55–60 名学员</strong>——只需目标儿童池的 4–5%，且已有竞品验证付费意愿。夏令营为重要补充：4 周 × 15 人 × €160 ≈ €9,600 收入，年净贡献约 €4,000–5,000。综合测算<strong>约在第三学年收回启动投入</strong>。以上均为学费未含注册费的保守口径；若收取 €50–80/年注册费（意大利机构惯例），回收更快。</p>
+
+<h2>七、招生与营销</h2><div class="rule"></div>
+<ul>
+  <li><strong>微信是主战场（零成本）</strong>：本地华人群 + 公众号 + 家长朋友圈转发；华人社区靠口碑，前 20 个家庭是种子。</li>
+  <li><strong>华人商圈地推</strong>：华人酒吧、餐馆、超市（Reggio 华人经营酒吧现象显著）投放传单，1,000 张 A5 仅 €20–60。</li>
+  <li><strong>侨务资源</strong>：向米兰总领馆侨务部门登记华校身份 → 免费教材征订、"中华文化大乐园"夏令营、"寻根之旅"组团资格；联络雷焦华人协会与华人酒吧业主协会。</li>
+  <li><strong>机构合作</strong>：博洛尼亚孔院（YCT 考点，探索教学点挂靠）；日后可申请成为剑桥备考中心。</li>
+  <li><strong>面向本地</strong>：Google 地图 + Instagram/Facebook 页面 + 官网（第二期兼收学中文的意大利孩子，扩大市场）。</li>
+  <li><strong>转化抓手</strong>：免费体验课 + 老带新减免 + 兄妹折扣；节庆活动（春节演出、书法体验）做传播素材。</li>
+</ul>
+
+<h2>八、启动路线图</h2><div class="rule"></div>
+<div class="timeline">
+  <div class="step"><b>2026 年 9–12 月 · 筹备期</b><br>确定法律形式并注册（commercialista）；SUAP 咨询；看场地签约；启动微信社群冷启动，摸底登记意向学员。</div>
+  <div class="step"><b>2027 年 1–5 月 · 试点期</b><br>装修入场；<strong>先开 2 个周六中文试点班</strong>（可临时场地）验证需求与定价；招募教师并办齐无犯罪证明；对接领馆教材征订与孔院。</div>
+  <div class="step"><b>2027 年 6–8 月 · 夏令营试水</b><br>办 2–4 周夏令营，检验全天运营能力，积累首批口碑家庭；完成正式招生宣传（网站上线、开放日）。</div>
+  <div class="step"><b>2027 年 9 月 · 正式开学</b><br>跟随大区校历（9 月 15 日前后）全科开课：中文分级班 + 英语 + 美术 + 钢琴；目标首学期 35–45 名学员。</div>
+  <div class="step"><b>2028 年起 · 扩展期</b><br>学员破 90 后评估：增租教室 / 开 Carpi 教学点 / 转 SRL / 申请剑桥备考中心资质。</div>
+</div>
+
+<h2>九、风险与应对</h2><div class="rule"></div>
+<div class="tablebox"><table>
+  <tr><th>风险</th><th>应对</th></tr>
+  <tr><td>招生不及预期</td><td>试点班先行验证再重投入；场地签约谈免租期；固定成本压在 €2,000/月以内</td></tr>
+  <tr><td>KM School 竞争</td><td>差异化：英语线 + 三证锚点（YCT/YLE/Trinity）+ Carpi/Modena 空白市场；不打价格战</td></tr>
+  <tr><td>用工与合规风险</td><td>教师一律 P.IVA 开票 + 无犯罪证明前置；commercialista 与 consulente del lavoro 提前介入</td></tr>
+  <tr><td>教师流动</td><td>课件教案标准化沉淀在机构；多渠道储备（留学生、孔院志愿者、本地音乐学院学生）</td></tr>
+  <tr><td>季节性现金流</td><td>暑期夏令营 + 按月收费平滑现金流；预备金常备 3 个月固定成本</td></tr>
+</table></div>
+
+<div class="foot">
+  <p><strong>数据来源</strong>：人口——ISTAT/tuttitalia（2024–2025）；作息与校历——意大利教育部、Emilia-Romagna 大区政府（2026/27 校历已发布）；租金——mercato-immobiliare.info 与 Casa.it 挂牌价（2026-08）；学费与师资行情——ProntoPro、Superprof、Helen Doron、CCNL ANINSEI 等公开价目；法律——D.Lgs. 117/2017、Circolare AdE 1/2026、D.Lgs. 39/2014、L. 27/2006 等。</p>
+  <p><strong>签约前必须本地核实</strong>：具体房源的用途类别与 agibilità（tecnico）、SUAP 申报要求、TARI 税率、KM School 实际学费、领馆教材征订流程。所有标注"可调"的价格与人数为规划假设，供讨论修改。</p>
+  <p>培芽教育 · Centro Culturale Peiya（拟）· v1.0 草案 · 2026-08-20</p>
+</div>
+
+</div>
